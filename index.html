@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://pay-service.icadpay.com/host/new-inline-stage-pay.js"> </script>
 </head>
 <body>
-    
 
+			<div style="display: flex; justify-content: center;;background: #00000059; height: 100vh;">
+			<form  style="display: flex; flex-direction: column; gap: 10px; width: 450px; margin-top: 50px;" id="payment-form">
+				<input type="text" style="padding: 15px 20px; border-radius: 10px; border: none;" class="form-control" id="firstName" placeholder="Enter First Name" name="firstName">
+				<input type="text" style="padding: 15px 20px; border-radius: 10px; border: none;" class="form-control" id="lastName" placeholder="Enter Last Name" name="lastName">
+				<input type="text" style="padding: 15px 20px; border-radius: 10px; border: none;" class="form-control" id="email" placeholder="Enter Email" name="email">
+				<input type="text" style="padding: 15px 20px; border-radius: 10px; border: none;" class="form-control" id="phone" placeholder="Enter Phone" name="phone">
+				<input type="text" style="padding: 15px 20px; border-radius: 10px; border: none;" class="form-control" id="narration" placeholder="Enter Narration" name="narration">
+				<input type="text" style="padding: 15px 20px; border-radius: 10px; border: none;" class="form-control" id="amount" placeholder="Enter Amount" name="amount">
+				<input type="button" style="padding: 15px 20px; border-radius: 10px; border: none; background-color: #15089c; color: #ffffff;" value="Submit" button class="button" onclick="iCadPay()"/>
+			</form>
+			</div>
 
 
     <script src="/index.js"></script>
